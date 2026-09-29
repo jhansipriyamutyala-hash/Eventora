@@ -1,0 +1,366 @@
+/* ================= CERTIFICATE PAGE ================= */
+
+.certificate-page {
+  min-height: 100vh;
+  padding: 50px 6%;
+  background: #f5f7fb;
+}
+
+
+/* ================= HEADER ================= */
+
+.certificate-header {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.certificate-header h1 {
+  margin: 0 0 12px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #17233c;
+}
+
+.certificate-header p {
+  margin: 0 auto;
+  max-width: 650px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #6b7280;
+}
+
+
+/* ================= CERTIFICATE CONTAINER ================= */
+
+.certificate-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+
+/* ================= CERTIFICATE CARD ================= */
+
+.certificate-card {
+  position: relative;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  padding: 32px;
+
+  border: 1px solid #e5e7eb;
+
+  box-shadow:
+    0 8px 25px rgba(23, 35, 60, 0.08);
+
+  text-align: center;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 14px 35px rgba(23, 35, 60, 0.13);
+}
+
+
+/* ================= CERTIFICATE ICON ================= */
+
+.certificate-icon {
+  display: block;
+
+  margin: 0 auto 18px;
+
+  font-size: 58px;
+
+  color: #f5b400;
+}
+
+.locked-icon {
+  color: #9ca3af;
+}
+
+
+/* ================= TITLE ================= */
+
+.certificate-card h2 {
+  margin: 0 0 18px;
+
+  font-size: 22px;
+
+  font-weight: 700;
+
+  color: #17233c;
+}
+
+
+/* ================= DETAILS ================= */
+
+.certificate-card p {
+  margin: 8px 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+.certificate-card p strong {
+  color: #374151;
+}
+
+
+/* ================= STATUS ================= */
+
+.status {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  margin: 20px auto 18px !important;
+
+  padding: 8px 15px;
+
+  border-radius: 20px;
+
+  font-size: 13px !important;
+
+  font-weight: 600;
+}
+
+
+/* ================= COMPLETED ================= */
+
+.completed-status {
+  background: #dcfce7;
+
+  color: #15803d !important;
+}
+
+
+/* ================= LOCKED ================= */
+
+.locked-certificate {
+  background: #fafafa;
+
+  border: 1px solid #e5e7eb;
+
+  box-shadow:
+    0 5px 18px rgba(0, 0, 0, 0.05);
+}
+
+.locked-certificate h2 {
+  color: #4b5563;
+}
+
+.locked-status {
+  background: #fee2e2;
+
+  color: #dc2626 !important;
+}
+
+
+/* ================= NOTE ================= */
+
+.certificate-note {
+  max-width: 380px;
+
+  margin: 5px auto 18px !important;
+
+  color: #9ca3af !important;
+
+  font-size: 13px !important;
+
+  line-height: 1.5;
+}
+
+
+/* ================= DOWNLOAD BUTTON ================= */
+
+.certificate-card button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 9px;
+
+  min-width: 210px;
+
+  padding: 12px 20px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.certificate-card button:hover:not(:disabled) {
+  background: #1d4ed8;
+
+  transform: translateY(-2px);
+}
+
+
+/* ================= LOCKED BUTTON ================= */
+
+.certificate-card .locked-button {
+  background: #e5e7eb;
+
+  color: #9ca3af;
+
+  cursor: not-allowed;
+
+  box-shadow: none;
+}
+
+.certificate-card .locked-button:hover {
+  background: #e5e7eb;
+
+  transform: none;
+}
+
+
+/* ================= NO CERTIFICATES ================= */
+
+.no-certificates {
+  width: 100%;
+
+  max-width: 600px;
+
+  margin: 70px auto;
+
+  padding: 55px 35px;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  border: 1px solid #e5e7eb;
+
+  box-shadow:
+    0 8px 25px rgba(23, 35, 60, 0.07);
+
+  text-align: center;
+}
+
+.no-certificates > svg {
+  font-size: 55px;
+
+  color: #9ca3af;
+
+  margin-bottom: 18px;
+}
+
+.no-certificates h2 {
+  margin: 0 0 12px;
+
+  color: #17233c;
+
+  font-size: 24px;
+}
+
+.no-certificates p {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+  .certificate-page {
+    padding: 40px 4%;
+  }
+
+  .certificate-container {
+    grid-template-columns: 1fr;
+    max-width: 650px;
+  }
+
+  .certificate-header h1 {
+    font-size: 32px;
+  }
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .certificate-page {
+    padding: 30px 16px;
+  }
+
+  .certificate-header {
+    margin-bottom: 30px;
+  }
+
+  .certificate-header h1 {
+    font-size: 27px;
+  }
+
+  .certificate-header p {
+    font-size: 14px;
+  }
+
+  .certificate-card {
+    padding: 25px 20px;
+  }
+
+  .certificate-icon {
+    font-size: 48px;
+  }
+
+  .certificate-card h2 {
+    font-size: 19px;
+  }
+
+  .certificate-card button {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .no-certificates {
+    padding: 40px 22px;
+  }
+
+  .no-certificates h2 {
+    font-size: 21px;
+  }
+}

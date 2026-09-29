@@ -1,0 +1,483 @@
+/* ================= VOLUNTEER PAGE ================= */
+
+.volunteer-page {
+  min-height: 100vh;
+  padding: 120px 7% 70px;
+
+  background:
+    radial-gradient(
+      circle at 10% 10%,
+      rgba(59, 130, 246, 0.16),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 90% 20%,
+      rgba(139, 92, 246, 0.16),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #eef2ff,
+      #f5f3ff 50%,
+      #e0f2fe
+    );
+}
+
+
+/* ================= HEADER ================= */
+
+.volunteer-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.volunteer-header h1 {
+  font-size: 44px;
+  margin-bottom: 12px;
+
+  background: linear-gradient(
+    90deg,
+    #2563eb,
+    #7c3aed,
+    #9333ea
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.volunteer-header p {
+  font-size: 18px;
+  color: #475569;
+}
+
+
+/* ================= GRID ================= */
+
+.volunteer-container {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 28px;
+}
+
+
+/* ================= CARD ================= */
+
+.volunteer-card {
+  padding: 28px;
+
+  border-radius: 22px;
+
+  background: rgba(255, 255, 255, 0.82);
+
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.9);
+
+  box-shadow:
+    0 15px 35px rgba(37, 99, 235, 0.12);
+
+  transition: 0.35s ease;
+}
+
+.volunteer-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 25px 50px rgba(79, 70, 229, 0.22);
+}
+
+
+/* ================= CARD TITLE ================= */
+
+.volunteer-card h2 {
+  margin-bottom: 20px;
+
+  color: #172554;
+
+  font-size: 23px;
+}
+
+
+/* ================= CARD INFO ================= */
+
+.volunteer-card p {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #64748b;
+
+  margin: 12px 0;
+
+  font-size: 15px;
+}
+
+.volunteer-card p svg {
+  color: #4f46e5;
+
+  min-width: 16px;
+}
+
+
+/* ================= APPLY BUTTON ================= */
+
+.volunteer-card button {
+  width: 100%;
+
+  margin-top: 18px;
+
+  padding: 13px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #2563eb,
+      #4f46e5,
+      #7c3aed
+    );
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 20px rgba(79, 70, 229, 0.25);
+
+  transition: 0.3s ease;
+}
+
+.volunteer-card button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 28px rgba(79, 70, 229, 0.4);
+}
+
+
+/* ================================================= */
+/* VOLUNTEER REGISTRATION MODAL */
+/* ================================================= */
+
+.volunteer-modal {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 3000;
+
+  background:
+    rgba(15, 23, 42, 0.78);
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+}
+
+
+/* ================= MODAL CONTENT ================= */
+
+.volunteer-modal-content {
+  position: relative;
+
+  width: 100%;
+
+  max-width: 520px;
+
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #f8faff
+    );
+
+  padding: 35px;
+
+  border-radius: 24px;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.3);
+
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+
+/* ================= MODAL TITLE ================= */
+
+.volunteer-modal-content h2 {
+  margin: 0 0 8px;
+
+  text-align: center;
+
+  font-size: 28px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #2563eb,
+      #7c3aed
+    );
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* ================= SUBTITLE ================= */
+
+.volunteer-modal-subtitle {
+  text-align: center;
+
+  color: #64748b;
+
+  margin-bottom: 25px;
+
+  font-size: 16px;
+
+  font-weight: 600;
+}
+
+
+/* ================= CLOSE BUTTON ================= */
+
+.volunteer-modal-close {
+  position: absolute;
+
+  top: 14px;
+
+  right: 16px;
+
+  width: 38px;
+
+  height: 38px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #eef2ff;
+
+  color: #334155;
+
+  font-size: 26px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.volunteer-modal-close:hover {
+  background: #e0e7ff;
+
+  transform: rotate(90deg);
+}
+
+
+/* ================= FORM ================= */
+
+.volunteer-modal-content form {
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+/* ================= LABEL ================= */
+
+.volunteer-modal-content label {
+  margin-bottom: 6px;
+
+  font-weight: 600;
+
+  color: #334155;
+
+  font-size: 14px;
+}
+
+
+/* ================= INPUT ================= */
+
+.volunteer-modal-content input,
+.volunteer-modal-content select {
+  width: 100%;
+
+  padding: 12px 14px;
+
+  margin-bottom: 16px;
+
+  border: 1px solid #cbd5e1;
+
+  border-radius: 10px;
+
+  background: white;
+
+  color: #1e293b;
+
+  font-size: 15px;
+
+  box-sizing: border-box;
+
+  outline: none;
+
+  transition: 0.2s;
+}
+
+
+.volunteer-modal-content input:focus,
+.volunteer-modal-content select:focus {
+  border-color: #4f46e5;
+
+  box-shadow:
+    0 0 0 3px rgba(79, 70, 229, 0.12);
+}
+
+
+/* ================= MESSAGE ================= */
+
+.volunteer-message {
+  padding: 12px;
+
+  border-radius: 10px;
+
+  margin-bottom: 18px;
+
+  text-align: center;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+
+.volunteer-message.error {
+  background: #fee2e2;
+
+  color: #b91c1c;
+
+  border: 1px solid #fecaca;
+}
+
+
+.volunteer-message.success {
+  background: #dcfce7;
+
+  color: #15803d;
+
+  border: 1px solid #bbf7d0;
+}
+
+
+/* ================= REGISTER BUTTON ================= */
+
+.volunteer-register-btn {
+  width: 100%;
+
+  padding: 14px;
+
+  margin-top: 5px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #2563eb,
+      #4f46e5,
+      #7c3aed
+    );
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 20px rgba(79, 70, 229, 0.25);
+
+  transition: 0.3s;
+}
+
+.volunteer-register-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 28px rgba(79, 70, 229, 0.4);
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+
+  .volunteer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .volunteer-page {
+    padding: 110px 20px 50px;
+  }
+
+  .volunteer-header h1 {
+    font-size: 34px;
+  }
+
+  .volunteer-header p {
+    font-size: 16px;
+  }
+
+  .volunteer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .volunteer-modal {
+    padding: 15px;
+  }
+
+  .volunteer-modal-content {
+    padding: 30px 20px;
+  }
+
+  .volunteer-modal-content h2 {
+    font-size: 24px;
+  }
+
+}

@@ -1,0 +1,229 @@
+/* ================= FEEDBACK PAGE ================= */
+
+.feedback-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:120px 20px;
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+}
+
+.feedback-card{
+
+    width:650px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+    text-align:center;
+
+}
+
+.feedback-card h1{
+
+    color:#2563eb;
+
+    margin-bottom:10px;
+
+    font-size:36px;
+
+}
+
+.feedback-card p{
+
+    color:#666;
+
+    margin-bottom:25px;
+
+}
+
+.stars{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+
+    margin-bottom:30px;
+
+    font-size:32px;
+
+    color:#fbbf24;
+
+    cursor:pointer;
+
+}
+
+.stars svg:hover{
+
+    transform:scale(1.2);
+
+    transition:.3s;
+
+}
+
+.feedback-card form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.feedback-card input,
+.feedback-card textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    outline:none;
+
+    font-size:16px;
+
+    box-sizing:border-box;
+
+}
+
+.feedback-card textarea{
+
+    resize:none;
+
+}
+
+.feedback-card input:focus,
+.feedback-card textarea:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 8px rgba(37,99,235,.2);
+
+}
+
+.feedback-card button{
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:linear-gradient(45deg,#2563eb,#7c3aed);
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.feedback-card button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px rgba(37,99,235,.35);
+
+}
+
+@media(max-width:768px){
+
+.feedback-card{
+
+    width:100%;
+
+    padding:30px 20px;
+
+}
+
+.feedback-card h1{
+
+    font-size:30px;
+
+}
+
+.stars{
+
+    font-size:28px;
+
+}
+
+}
+.feedback-message{
+    max-width:700px;
+    margin:0 auto 25px;
+    padding:15px 20px;
+    background:white;
+    border-radius:12px;
+    text-align:center;
+    color:#1e293b;
+    font-weight:600;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.feedback-form{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.feedback-form label{
+    color:#334155;
+    font-weight:600;
+    margin-top:8px;
+}
+
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea{
+    width:100%;
+    box-sizing:border-box;
+    padding:13px;
+    border:1px solid #dbe2ea;
+    border-radius:9px;
+    font-size:15px;
+    outline:none;
+    font-family:inherit;
+}
+
+.feedback-form input:focus,
+.feedback-form select:focus,
+.feedback-form textarea:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 0 3px rgba(37,99,235,.1);
+}
+
+.feedback-form button{
+    margin-top:15px;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.feedback-form button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(37,99,235,.25);
+}
